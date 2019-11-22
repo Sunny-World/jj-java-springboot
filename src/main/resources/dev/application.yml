@@ -1,0 +1,14 @@
+spring:
+    profiles:
+        active: datasource,redis,shiro,jackson
+
+server:
+    port: 8080
+    servlet:
+        session:
+            timeout: 30m
+
+mybatis:
+    mapper-locations: classpath:mapper/*.xml #配置映射文件
+    type-aliases-package: cn.jiweiqing.base.bean
+

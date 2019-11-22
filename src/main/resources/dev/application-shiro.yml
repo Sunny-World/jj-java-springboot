@@ -1,0 +1,6 @@
+shiro:
+  #匿名资源，不需要登录即可访问
+  anon:
+    - /api/login
+  #未登录跳转的接口地址
+  unlogin: /api/unLogin
